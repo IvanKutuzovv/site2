@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" rel="stylesheet">
+    <title>Паспорт</title>
+
+    <style>
+        body {
+            background-image: url(passportModel.jpg);
+            background-position: center-bottom;
+            background-repeat: no-repeat;
+            }
+            .b1 {
+            margin-left: 80px;
+            margin-top: 56px;
+            font: bold 100% serif;
+            }
+            .b2 {
+            margin-left: 70px;
+            margin-top: 26px;
+            font: bold 100% serif;
+            }
+            .b3 {
+            margin-left: 270px;
+            margin-top: -18px;
+            font: bold 100% serif;
+            }
+            .b4 {
+            margin-left: 200px;
+            margin-top: 186px;
+            font: bold 100% serif;
+            }
+            .b5 {
+            margin-left: 212px;
+            margin-top: 25px;
+            font: bold 100% serif;
+            }
+            .b6 {
+            margin-left: 195px;
+            margin-top: 3px;
+            font: bold 100% serif;
+            }
+            .b7 {
+            margin-left: 142px;
+            margin-top: 3px;
+            font: bold 100% serif;
+            }
+            .b8 {
+            margin-left: 230px;
+            margin-top: -13px;
+            font: bold 100% serif;
+            position: absolute;
+            }
+            .b9{
+            margin-left: 180px;
+            margin-top: 3px;
+            font: bold 100% serif;
+            position: absolute;
+            }
+            .IvanPic{
+            margin-left: 20px;
+            margin-top: -65px;
+            position: absolute;
+            }
+            .datapassport{
+margin-left: 571px;
+margin-top: -425px;
+position: absolute;
+}
+            .photo2 {
+            margin-left: 251px;
+            margin-top: -225px;
+            position: absolute;
+
+            }
+
+        button {
+            padding: 15px 35px;
+            background-color: #7782c4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin-left: 430px;
+
+        }
+    </style>
+</head>
+<body>
+
+
+<main>
+    <div class="passport">
+
+        <div class="b1" id="where">ГУ МВД ПО Г. МОСКВЕ</div>
+        <div class="b2"> 11.10.2009 </div>
+        <div class="b3"> 777-888 </div>
+        <div class="b4" id="surname">Кутузов</div>
+        <div class="b5" id="name">Иван</div>
+        <div class="b6" id="father">Владимирович</div>
+        <div class="b7" id="gender">Муж</div>
+        <div class="b8" id="birthdate">08.06.2005</div>
+        <div class="b9"> Москва </div>
+        <div class="IvanPic">
+            <img src="IvanPic.jpg" height="120" width="100" title="Ivan">
+        </div>
+        <div class="photo2">
+            <img src="signature.webp" height="30" width="80" title="signature">
+        </div>
+    </div>
+    <div class="button-container"> <br> <br> <br> <br> <br>
+        <button id="translateButton">Изменяем кириллицу на латиницу по клику</button>
+    </div>
+</main>
+
+
+<script>
+    document.getElementById('translateButton').addEventListener('click', function() {
+        const whereText = document.getElementById('where');
+        const surnameText = document.getElementById('surname');
+        const nameText = document.getElementById('name');
+        const patronymicText = document.getElementById('father');
+        const genderText = document.getElementById('gender');
+        const birthdateText = document.getElementById('birthdate');
+
+        if (whereText.innerText === 'ГУ МВД ПО Г. МОСКВЕ') {
+            whereText.innerText = 'MOSCOW GU MVD';
+            surnameText.innerText = 'Kutuzov';
+            nameText.innerText = 'Ivan';
+            genderText.innerText = 'Male';
+            patronymicText.innerText = 'Vladimirovich';
+
+            birthdateText.innerText = 'VIII.VI.MMV';
+        } else {
+            whereText.innerText = 'ГУ МВД ПО Г. МОСКВЕ';
+            surnameText.innerText = 'Кутузов';
+            nameText.innerText = 'Иван';
+            patronymicText.innerText = 'Владимирович';
+            genderText.innerText = 'Муж';
+            birthdateText.innerText = '08.06.2005';
+        }
+    });
+</script>
+
+</body>
+</html>

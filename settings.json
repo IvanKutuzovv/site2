@@ -1,0 +1,69 @@
+[
+  {
+    "id": "1",
+    "title": "Игровое кресло",
+    "vendor_code": "chair",
+    "description": "",
+    "price": 1999,
+    "img": "GamingChairArdorGaming.jpg"
+  },
+  {
+    "id": "2",
+    "title": "Секретная образовательная встреча с нашей командой",
+    "vendor_code": "meeting",
+    "description": "",
+    "price": 49999,
+    "img": "accelerator.jpg"
+  },
+  {
+    "id": "3",
+    "title": "Ноутбук",
+    "vendor_code": "laptop",
+    "description": "",
+    "price": 14999,
+    "img": "LaptopDexpAquilon.jpg"
+  },
+  {
+    "id": "4",
+    "title": "Чехол для ноутбука",
+    "vendor_code": "case",
+    "description": "",
+    "price": 799,
+    "img": "Laptop.jpg"
+  }
+  ,
+  {
+    "id": "5",
+    "title": "Клавиатура",
+    "vendor_code": "keyboard",
+    "description": "",
+    "price": 2999,
+    "img": "RedSquareKeyBoard.jpg"
+  },
+  {
+    "id": "6",
+    "title": "Видеокарта",
+    "vendor_code": "videocard",
+    "description": "",
+    "price": 24999,
+    "img": "RTX4060dual.jpg"
+  },
+
+  {
+    "id": "7",
+    "title": "Компьютер",
+    "vendor_code": "pc",
+    "description": "",
+    "price": 49999,
+    "img": "asuspc.jpg"
+  }
+  ,
+  {
+    "id": "8",
+    "title": "Наушники",
+    "vendor_code": "headphones",
+    "description": "",
+    "price": 4999,
+    "img": "logitechHeadphones.jpg"
+  }
+]
